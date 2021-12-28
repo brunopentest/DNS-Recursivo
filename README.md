@@ -10,8 +10,12 @@ OBS²: Esse Debian preferencialmente tem que está com ip público.
 
 Comando para serem aplicados assim que iniciar o Debian já com internet:
 
-su -
+----------------------------------------------------------------------------------------------------------------------------
 
-apt-get install curl
+apt-get install wget
 
-curl -s https://github.com/brunopentest/DNS-Recursivo/recursivo.sh | sudo bash
+wget https://suporte.upisp.com.br/recursivo.sh --no-check-certificate
+
+chmod +x recursivo.sh
+
+./recursivo
